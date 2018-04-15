@@ -12,13 +12,13 @@
 		1886E4372083325D00D023EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886E4352083325D00D023EC /* Main.storyboard */; };
 		1886E4392083326100D023EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1886E4382083326100D023EC /* Assets.xcassets */; };
 		1886E43C2083326100D023EC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1886E43A2083326100D023EC /* LaunchScreen.storyboard */; };
-		1886E4472083326200D023EC /* RxSwiftMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886E4462083326200D023EC /* RxSwiftMVVMTests.swift */; };
 		1886E4542083383400D023EC /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1886E4522083383400D023EC /* RxSwift.framework */; };
 		1886E4552083383400D023EC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1886E4532083383400D023EC /* RxCocoa.framework */; };
 		1886E45C20833F3E00D023EC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1886E4532083383400D023EC /* RxCocoa.framework */; };
 		1886E45D20833F3E00D023EC /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1886E4582083385100D023EC /* RxTest.framework */; };
 		1886E4612083747B00D023EC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886E4602083747B00D023EC /* ViewModel.swift */; };
 		1886E46B2083777F00D023EC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886E46A2083777F00D023EC /* Model.swift */; };
+		1886E46D2083858800D023EC /* ViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886E46C2083858800D023EC /* ViewModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +40,6 @@
 		1886E43B2083326100D023EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1886E43D2083326100D023EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1886E4422083326200D023EC /* RxSwiftMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RxSwiftMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1886E4462083326200D023EC /* RxSwiftMVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftMVVMTests.swift; sourceTree = "<group>"; };
 		1886E4482083326200D023EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1886E4522083383400D023EC /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		1886E4532083383400D023EC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
@@ -48,6 +47,7 @@
 		1886E4582083385100D023EC /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		1886E4602083747B00D023EC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		1886E46A2083777F00D023EC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1886E46C2083858800D023EC /* ViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +109,7 @@
 		1886E4452083326200D023EC /* RxSwiftMVVMTests */ = {
 			isa = PBXGroup;
 			children = (
-				1886E4462083326200D023EC /* RxSwiftMVVMTests.swift */,
+				1886E46E208385AE00D023EC /* ViewModel */,
 				1886E4482083326200D023EC /* Info.plist */,
 			);
 			path = RxSwiftMVVMTests;
@@ -148,6 +148,14 @@
 				1886E46A2083777F00D023EC /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1886E46E208385AE00D023EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1886E46C2083858800D023EC /* ViewModelTest.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1886E4472083326200D023EC /* RxSwiftMVVMTests.swift in Sources */,
+				1886E46D2083858800D023EC /* ViewModelTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
