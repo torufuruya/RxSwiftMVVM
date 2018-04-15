@@ -17,6 +17,8 @@
 		1886E4552083383400D023EC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1886E4532083383400D023EC /* RxCocoa.framework */; };
 		1886E45C20833F3E00D023EC /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1886E4532083383400D023EC /* RxCocoa.framework */; };
 		1886E45D20833F3E00D023EC /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1886E4582083385100D023EC /* RxTest.framework */; };
+		1886E4612083747B00D023EC /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886E4602083747B00D023EC /* ViewModel.swift */; };
+		1886E46B2083777F00D023EC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1886E46A2083777F00D023EC /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		1886E4532083383400D023EC /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		1886E4562083384E00D023EC /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
 		1886E4582083385100D023EC /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		1886E4602083747B00D023EC /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		1886E46A2083777F00D023EC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +94,14 @@
 		1886E4302083325D00D023EC /* RxSwiftMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				1886E4672083752600D023EC /* Model */,
+				1886E4652083751500D023EC /* ViewModel */,
+				1886E4642083750E00D023EC /* View */,
 				1886E4312083325D00D023EC /* AppDelegate.swift */,
-				1886E4332083325D00D023EC /* ViewController.swift */,
-				1886E4352083325D00D023EC /* Main.storyboard */,
 				1886E4382083326100D023EC /* Assets.xcassets */,
-				1886E43A2083326100D023EC /* LaunchScreen.storyboard */,
 				1886E43D2083326100D023EC /* Info.plist */,
+				1886E43A2083326100D023EC /* LaunchScreen.storyboard */,
+				1886E4352083325D00D023EC /* Main.storyboard */,
 			);
 			path = RxSwiftMVVM;
 			sourceTree = "<group>";
@@ -118,6 +124,30 @@
 				1886E4522083383400D023EC /* RxSwift.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1886E4642083750E00D023EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1886E4332083325D00D023EC /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1886E4652083751500D023EC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1886E4602083747B00D023EC /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1886E4672083752600D023EC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1886E46A2083777F00D023EC /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1886E4342083325D00D023EC /* ViewController.swift in Sources */,
+				1886E4612083747B00D023EC /* ViewModel.swift in Sources */,
+				1886E46B2083777F00D023EC /* Model.swift in Sources */,
 				1886E4322083325D00D023EC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
